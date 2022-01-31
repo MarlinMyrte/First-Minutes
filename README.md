@@ -141,7 +141,8 @@ Now, by adding up the "lost points" of each minute, we can recalculate the resul
 
 
 **Western Conference**
-![alt text](https://github.com/MarlinMyrte/First-Minutes/blob/main/West%20Standings.png "East")
+
+![alt text](https://github.com/MarlinMyrte/First-Minutes/blob/main/West%20Standings.png "West")
 
 ### In the Eastern Conference, we can see that the 76ers jumped a spot from the 3rd place to the 2nd place, the Bulls have 3 ties which could bring them down to the 2nd spot in the East and Charlotte dropped a spot to Toronto and is now 7th
 ### In the Western Conference, the Los Angeles Clippers might drop 2 wins because of ties and that could bring them to the 9th place and to the play-in tournament while 2 potential wins in ties from the Kings could bring them to the 12th spot
