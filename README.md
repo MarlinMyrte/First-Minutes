@@ -17,7 +17,7 @@ I noticed that during the first 2-3 minutes of each quarter, players seem more "
 
 ## First, we're going to check whether there is any pattern in scoring in each minute
 For this, we're going to create a metric to count points per minute for each quarter and calculate the average points per minute (ppm) for each minute.
-For our analysis we are going to use NBA play-by-play data from the 2021-2022 season up to now (January 31st 2022).
+For our analysis we are going to use NBA play-by-play data from the 2021-2022 season up to now (February 28th 2022).
 
 Before doing that we want to clean the dataset:
 - We separate the minutes from the clock columns
@@ -44,11 +44,11 @@ After collecting our data we perform a T-test for the means of the two time peri
 - Ho: μ1=μ2, There is not a significant difference
 - H1: μ1<>μ2, There is a significant difference
  
-- First 2 minutes of a quarter mean value: 3.93
-- Last 10 minutes of a quarter mean value: 4.62
+- First 2 minutes of a quarter mean value: 3.97
+- Last 10 minutes of a quarter mean value: 4.65
 - First 2 minutes of a quarter std value: 1.53
 - Last 10 minutes of a quarter std value: 0.79
-- p-value: 3.647500905905782e-101
+- p-value: 4.7729463012787715e-122
 
 #### After performing the t-test we reject the null hypothesis at the 5% significance level and we conclude that there is a difference between the offensive performance during the first 2 minutes of each quarter.
 
@@ -72,11 +72,11 @@ Once again, we perform a T-test for the means of the two time periods to check a
 - Ho: μ1=μ2, There is not a significant difference
 - H1: μ1<>μ2, There is a significant difference
 
-- First 2 minutes of the first half quarters mean value: 3.93
-- First 2 minutes of the second half quarters mean value: 3.95
-- First 2 minutes of the first half quarters std value: 1.53
-- First 2 minutes of the second half quarters std value: 0.79
-- p-value 0.6509362303181166
+- First 2 minutes of the first half quarters mean value: 3.9658
+- First 2 minutes of the second half quarters mean value: 3.9655
+- First 2 minutes of the first half quarters std value: 1.534
+- First 2 minutes of the second half quarters std value: 1.528
+- p-value 0.995690165442176
 
 After performing a hypothesis test on the two time periods (start of quarter vs the rest) it was confirmed that the ppm during the first 2 minutes of each quarter is significantly different between the ppm during the last 10 minutes of each quarter.
 
@@ -84,8 +84,8 @@ After performing a hypothesis test on the two time periods (start of quarter vs 
 
 ## What about the point production between the two halves? Which half produces more points and is their difference significant?
 
-- Mean points scored in the first half: 109.56
-- Mean points scored in the second half: 106.93
+- Mean points scored in the first half: 110.27
+- Mean points scored in the second half: 107.37
 
 ### On average this season, teams have performed better offensively in the first half.
 
@@ -93,7 +93,7 @@ And now for the test
 - Ho: μ1=μ2, There is not a significant difference
 - H1: μ1<>μ2, There is a significant difference
 
-- p-value 6.970259668915989e-05
+- p-value 1.692648135375981e-06
 
 ### So after performing the t-test we reject the null hypothesis at the 5% significance level and we conclude that there is a difference between the offensive performance between the 2 halves
 
@@ -105,8 +105,8 @@ And now for the test
 
 ### Let's examine the pace of the game
 
-- Mean possessions in the first half: 99.63
-- Mean possessions in the second half: 97.28
+- Mean possessions in the first half: 99.73
+- Mean possessions in the second half: 97.62
 
 ### On average, the first half of a games has more possessions than the second one and thus a faster pace
 
@@ -114,7 +114,7 @@ We can also check the hypothesis
 - Ho: μ1=μ2, There is not a significant difference
 - H1: μ1<>μ2, There is a significant difference
 
-- p-value 2.5427765045058275e-16
+- p-value 2.5026323927666307e-12
 
 ### So after performing the t-test we reject the null hypothesis at the 5% significance level and we conclude that there is a difference between the number of possessions between the 2 halves
 This means that slower pace could be a potential reason for less offensive productivity in the second half
